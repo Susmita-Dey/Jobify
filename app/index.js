@@ -16,7 +16,7 @@ const Home = () => {
                         <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
                     ),
                     headerRight: () => (
-                        <ScreenHeaderBtn iconUrl={icons.user} dimension="100%" />
+                        <ScreenHeaderBtn iconUrl={icons.user} dimension="80%" />
                     ),
                     headerTitle: ""
                 }} />
@@ -27,6 +27,8 @@ const Home = () => {
                     padding: SIZES.medium
                 }}>
                     <Welcome />
+                    <PopularJobs />
+                    <NearbyJobs />
                 </View>
             </ScrollView>
         </SafeAreaView>
