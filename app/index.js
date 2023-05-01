@@ -5,6 +5,19 @@ import { Stack, useRouter } from 'expo-router'
 import { COLORS, icons, images, SIZES } from '../constants'
 import { NearbyJobs, PopularJobs, ScreenHeaderBtn, Welcome } from '../components'
 
+// import { NavigationContainer } from "@react-navigation/native";
+// import AppNavigator from "./AppNavigator";
+
+// function App() {
+//     return (
+//         <NavigationContainer>
+//             <AppNavigator></AppNavigator>
+//         </NavigationContainer>
+//     )
+// }
+
+// export default App;
+
 const Home = () => {
     const router = useRouter()
     const [searchTerm, setSearchTerm] = useState('')

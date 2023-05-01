@@ -28,7 +28,7 @@ const PopularJobs = () => {
     <View style={styles.container}>
       <View style={styles.header} >
         <Text style={styles.headerTitle}>Popular Jobs</Text>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => { router.push('/popular/') }}>
           <Text style={styles.headerBtn}>Show all</Text>
         </TouchableOpacity>
       </View>
