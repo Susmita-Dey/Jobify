@@ -5,24 +5,11 @@ import { Stack, useRouter } from 'expo-router'
 import { COLORS, icons, images, SIZES } from '../constants'
 import { NearbyJobs, PopularJobs, ScreenHeaderBtn, Welcome } from '../components'
 
-// import { NavigationContainer } from "@react-navigation/native";
-// import AppNavigator from "./AppNavigator";
-
-// function App() {
-//     return (
-//         <NavigationContainer>
-//             <AppNavigator></AppNavigator>
-//         </NavigationContainer>
-//     )
-// }
-
-// export default App;
-
 const Home = () => {
     const router = useRouter()
     const [searchTerm, setSearchTerm] = useState('')
     return (
-        <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
+        <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite}}>
             <Stack.Screen
                 options={{
                     headerStyle: { backgroundColor: COLORS.lightWhite },
@@ -33,7 +20,8 @@ const Home = () => {
                     headerRight: () => (
                         <ScreenHeaderBtn iconUrl={icons.user} dimension="80%" />
                     ),
-                    headerTitle: ""
+                    headerTitle: "Jobify",
+                    headerTitleAlign: 'center'
                 }} />
 
             <ScrollView showsVerticalScrollIndicator={false}>
