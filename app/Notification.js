@@ -4,8 +4,9 @@ import { useRouter } from "expo-router";
 
 import styles from '../components/home/welcome/welcome.style'
 
+// Add Novu 
 
-const Profile = () => {
+const Notification = () => {
     return (
         <View style={styles.container}>
             <Text style={styles.userName}>Hello Susmita</Text>
@@ -13,4 +14,4 @@ const Profile = () => {
     )
 }
 
-export default Profile
+export default Notification

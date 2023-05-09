@@ -24,7 +24,7 @@ const Layout = () => {
   }
   return (
     <>
-      <Drawer>
+      <Drawer screenListeners={onLayoutRootView}>
         <Drawer.Screen
           name="index" // This is the name of the page and must match the url from root
           options={{
@@ -33,10 +33,36 @@ const Layout = () => {
           }}
         />
         <Drawer.Screen
-          name="popular/index" // This is the name of the page and must match the url from root
+          name="Notification" // This is the name of the page and must match the url from root
           options={{
-            drawerLabel: "User",
-            title: "overview",
+            drawerLabel: "Notifications",
+            title: "Notifications",
+          }}
+        />
+        <Drawer.Screen
+          name="Favorites" // This is the name of the page and must match the url from root
+          options={{
+            drawerLabel: "Favorites",
+            title: "Favorites",
+          }}
+        />
+        <Drawer.Screen
+          name="PopularJobsPage" // This is the name of the page and must match the url from root
+          options={{
+            drawerLabel: "Popular Jobs",
+          }}
+        />
+        <Drawer.Screen
+          name="NearbyJobsPage" // This is the name of the page and must match the url from root
+          options={{
+            drawerLabel: "Nearby Jobs",
+          }}
+        />
+        <Drawer.Screen
+          name="Settings" // This is the name of the page and must match the url from root
+          options={{
+            drawerLabel: "Settings",
+            title: "Settings",
           }}
         />
       </Drawer>

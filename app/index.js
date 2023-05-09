@@ -4,6 +4,7 @@ import { Stack, useRouter } from 'expo-router'
 
 import { COLORS, icons, images, SIZES } from '../constants'
 import { NearbyJobs, PopularJobs, ScreenHeaderBtn, Welcome } from '../components'
+import Settings from "./Settings";
 
 const Home = () => {
     const router = useRouter()
@@ -14,11 +15,12 @@ const Home = () => {
                 options={{
                     headerStyle: { backgroundColor: COLORS.lightWhite },
                     headerShadowVisible: false,
-                    headerLeft: () => (
-                        <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
-                    ),
                     headerRight: () => (
-                        <ScreenHeaderBtn iconUrl={icons.user} dimension="80%" />
+                        <ScreenHeaderBtn iconUrl={icons.user} dimension="80%" 
+                        // onClickUrl={()=>{
+                        //     <Settings />
+                        // }} 
+                        />
                     ),
                     headerTitle: "Jobify",
                     headerTitleAlign: 'center'

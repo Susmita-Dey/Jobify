@@ -2,9 +2,9 @@ import { Stack, useRouter } from "expo-router";
 import React from "react";
 import { SafeAreaView } from "react-native";
 import { View } from "react-native";
-import { NearbyJobs, ScreenHeaderBtn } from "../../components";
-import { COLORS, icons } from "../../constants";
-import styles from "../../styles/search";
+import { NearbyJobs, ScreenHeaderBtn } from "../components";
+import { COLORS, icons } from "../constants";
+import styles from "../styles/search";
 
 
 export default function NearbyJobsPage() {
